@@ -11,6 +11,7 @@
 ```
 keytool -keystore server.keystore.jks -alias localhost -validity 365 -genkey -keyalg RSA
 ```
+keytool -list -v -keystore server.keystore.jks
 
 **Example**  
 - After entering all the details the final value will look like below.
