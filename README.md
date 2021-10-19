@@ -41,7 +41,7 @@ keytool -keystore server.keystore.jks -alias localhost -certreq -file cert-file
 - The below command takes care of signing the CSR and then it spits out a file **cert-signed**
 
 ```
-openssl x509 -req -CA ca-cert -CAkey ca-key -in cert-file -out cert-signed -days 365 -CAcreateserial -passin pass:password
+openssl x509 -req -CA ca-cert -CAkey ca-key -in cert-file -out cert-signed -days 365 -CAcreateserial -passin pass:admincluster
 ```
 
 - To view the content inside the file **cert-signed**, run the below command.
